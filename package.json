@@ -10,7 +10,7 @@
     "test:coverage": "jest --coverage",
     "lint": "ng lint",
     "e2e": "cypress open",
-    "cypress": "concurrently \"ng serve\" \"cypress open\""
+    "cypress": "cypress open"
   },
   "private": true,
   "jest": {
