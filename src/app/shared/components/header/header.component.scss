@@ -1,0 +1,41 @@
+.header, header {
+    display: flex;
+    position: relative;
+    position: sticky;
+    flex-direction: column;
+    width: 100vw;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: inset 0 -1px 0 #dcdcdc;
+    z-index: 9997;
+    padding: 0;
+    h1{
+      color: #491708;
+    }
+    .container {
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 0 20px 0 30px;
+      width: 100%;
+      max-width: 1366px !important;
+      margin: auto;
+      padding: 0 30px;
+      p{
+        letter-spacing: -1px;
+        font-size: 1.25rem;
+        color: #3e3e3e;
+        margin-bottom: 24px;
+        font-weight: 500;
+        margin-top: 0;
+      }
+   }
+   .title {
+      display: block;
+      font-weight: 500;
+      font-size: 2rem;
+      letter-spacing: -1px;
+      margin: 0 0 30px;
+  }
+}

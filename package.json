@@ -3,14 +3,15 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "concurrently \"json-server --watch src/app/shared/mocks/db.json\" \"ng serve\"",
+    "mock": "json-server --watch src/app/shared/mocks/db.json",
     "build": "ng build",
     "test": "jest --no-cache",
     "test:watch": "npm run test -- --watch",
     "test:coverage": "jest --coverage",
     "lint": "ng lint",
-    "e2e": "cypress open",
-    "cypress": "cypress open"
+    "e2e": "concurrently \"json-server --watch src/app/shared/mocks/db.json\" \"ng serve\" \"cypress open\"",
+    "cypress": "concurrently \"json-server --watch src/app/shared/mocks/db.json\" \"ng serve\" \"cypress open\""
   },
   "private": true,
   "jest": {
@@ -46,6 +47,7 @@
     "@angular/platform-browser-dynamic": "~9.1.11",
     "@angular/router": "~9.1.11",
     "bootstrap": "^4.5.0",
+    "concurrently": "^5.2.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
