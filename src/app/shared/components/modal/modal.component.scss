@@ -1,0 +1,24 @@
+.modal-body{
+  label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+  }
+  .alert-warn{
+    display: none;
+  }
+}
+.error{
+  label{
+    color:#dc3545;  
+  }
+  .alert-warn{
+    display: block!important;  
+    color:#dc3545;  
+    margin-bottom: 0;
+  }
+  input[type=text],input[type=password]{
+    border-color: #dc3545;
+  }
+}

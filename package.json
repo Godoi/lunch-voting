@@ -3,15 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "concurrently \"json-server --watch src/app/shared/mocks/db.json\" \"ng serve\"",
-    "mock": "json-server --watch src/app/shared/mocks/db.json",
+    "start": "ng serve --proxy-config proxy.config.js",
     "build": "ng build",
     "test": "jest --no-cache",
     "test:watch": "npm run test -- --watch",
     "test:coverage": "jest --coverage",
     "lint": "ng lint",
-    "e2e": "concurrently \"json-server --watch src/app/shared/mocks/db.json\" \"ng serve\" \"cypress open\"",
-    "cypress": "concurrently \"json-server --watch src/app/shared/mocks/db.json\" \"ng serve\" \"cypress open\""
+    "e2e": "concurrently \"ng serve\" \"cypress open\"",
+    "cypress": "concurrently \"ng serve\" \"cypress open\""
   },
   "private": true,
   "jest": {
@@ -43,11 +42,15 @@
     "@angular/core": "~9.1.11",
     "@angular/forms": "~9.1.11",
     "@angular/http": "^7.2.16",
+    "@angular/localize": "^10.0.0",
     "@angular/platform-browser": "~9.1.11",
     "@angular/platform-browser-dynamic": "~9.1.11",
     "@angular/router": "~9.1.11",
+    "@ng-bootstrap/ng-bootstrap": "^6.1.0",
     "bootstrap": "^4.5.0",
     "concurrently": "^5.2.0",
+    "moment": "^2.27.0",
+    "ngx-countdown": "^9.0.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

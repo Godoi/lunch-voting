@@ -1,0 +1,27 @@
+<h1 class="title title-winner" *ngIf="data">Restaurante escolhido</h1>
+<div class="winner" *ngIf="data" data-cy="card-winner">      
+  <div class="card">      
+    <div class="figure">
+      <img src={{data.logo}} alt="{{data.name}}" class="logo" >
+    </div>
+
+    <div class="box-title">
+      <p class="name">
+        {{data.name}}
+      </p>
+      <p class="info">
+        {{data.menu}}
+      </p>
+      <p class="info rating">
+        <span *ngIf="data.votes.total"> Total de votos: {{data.votes.total}} </span>
+       </p>
+    </div>
+
+  </div>
+</div>
+
+<div class="winner notWinner" *ngIf="notWinner" data-cy="not-winner">
+  <div class="box-title">
+    <h1 class="title title-winner error"  *ngIf="notWinner">Não houve votos para validação da escolha.</h1>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title"> Para validar o seu voto use seu e-mail cadastrado </h4>
+  </div>
+  <form #f="ngForm" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="modal-body" [className]= "error ? 'modal-body error' : 'modal-body'">
+      
+        <div class="form-group"> 
+          <label for="email">
+            E-mail: *
+            <input type="text" class="form-control" formControlName="email"  data-cy="email" required />
+          </label>
+        </div>
+        <p class="alert-warn">{{msgError}}</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" [disabled]="!f.valid" class="btn btn-primary" type="submit" data-cy="cySubmit">
+        Login
+      </button>
+    </div>
+  </form>

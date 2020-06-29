@@ -1,0 +1,55 @@
+.countdown{
+  &.header{
+    margin: 0;
+    position: relative;
+    height: 150px;
+    width: calc(100% + 30px * 2);
+    border-radius: 0;
+    border: none;
+    background: rgba(0, 0, 0, 1);
+    order: -1;
+    color: #f7f7f7;
+    margin-top: 0;
+    .container{
+      background-color: initial;
+      max-width: 1366px;
+      padding-top: 18px;
+      p{
+        color:#f7f7f7;
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+      }
+      .title{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 0;
+      }
+      .sub-title{
+        font-size: 1.5rem;
+      }
+    }
+    .bg{
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 150px;
+      width: 100%;
+      opacity: 0.4;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+
+.bg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 150px;
+  width: 100%;
+  opacity: 0.4;
+  background-size: cover;
+  background-position: center;
+}

@@ -1,0 +1,16 @@
+.winner{
+  display: flex;
+  margin-bottom: 60px;
+  .card{
+    width: 410px;
+    margin: auto;
+    border: 1px solid #01a253;
+  }
+  &.notWinner{
+    justify-content: center;
+  }
+}
+.title-winner{
+  text-align: center;
+  color: #01a253;
+}

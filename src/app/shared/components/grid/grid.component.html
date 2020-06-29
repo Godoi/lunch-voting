@@ -1,1 +1,32 @@
-<p>grid works!</p>
+<div class="row">
+  <div class="col col-8"> 
+    <h1 class="title" [className]="winner ? 'grid opac' : 'grid'">Restaurantes </h1>
+    <div class="grid" [className]="winner ? 'grid opac' : 'grid'">
+      <div class="card"  *ngFor="let item of data" data-cy="list-card">   
+        <div class="figure">
+          <img src={{item.logo}} alt="{{item.name}}" class="logo" >
+        </div>
+        <div class="box-title">
+          <p class="name">
+            {{item.name}}
+          </p>
+          <p class="info">
+            {{item.menu}}
+          </p>
+          <p class="info rating">
+            <span *ngIf="item.votes.total"> Total de votos: {{item.votes.total}} </span>
+          </p>
+          <div class="footer" *ngIf="!winner">        
+            <button type="button" class="btn btn-primary btn-sm"  (click)="vote(item)">Votar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col col-4"> 
+    <h1 class="title" [className]="winner ? 'title opac' : 'title'"> Usuários </h1> 
+    <ul class="list-group" [className]="winner ? 'list-group opac' : 'list-group'"  data-cy="list-users">
+      <li class="list-group-item"  *ngFor="let item of users">{{item.name}} <small>{{item.email}}</small></li>
+    </ul> 
+  </div>
+</div>

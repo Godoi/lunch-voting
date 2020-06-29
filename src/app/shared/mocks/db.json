@@ -2,26 +2,83 @@
   "users": [
     {
       "id": 1,
-      "name": "Anderson",
-      "username": "anderson",
-      "email": "andersongodoipoa@gmail.com",
-      "password": "minhavaga"
+      "name": "Darth Vader",
+      "username": "vader",
+      "email": "darth.vader@darkside.sith",
+      "password": "palpatine"
     },
     {
       "id": 2,
-      "name": "Demo",
-      "username": "demo",
-      "email": "demo@gmail.com",
-      "password": "demo"
+      "name": "Darth Sidiou",
+      "username": "darth-sidiou",
+      "email": "darth.sidiou@starwars.com",
+      "password": "darth.sidiou"
+    },
+    {
+      "id": 3,
+      "name": "Leia Organa",
+      "username": "leia-organa",
+      "email": "leia.organa@starwars.com",
+      "password": "leia.organa"
+    },
+    {
+      "id": 4,
+      "name": "Luke Skywalker",
+      "username": "luke-skywalker",
+      "email": "luke-skywalker@starwars.com",
+      "password": "luke.skywalker"
+
+    },
+    {
+      "id": 5,
+      "name": "Yoda",
+      "username": "yoda",
+      "email": "yoda@starwars.com",
+      "password": "yoda"
+    },
+    {
+      "id": 6,
+      "name": "Jabba the Hutt",
+      "username": "jabba-hutt",
+      "email": "jabba.hutt@starwars.com",
+      "password": "jabba.hutt"
+    },
+    {
+      "id": 7,
+      "name": "Boba Fett",
+      "username": "boba-fett",
+      "email": "boba-fett@starwars.com",
+      "password": "boba.fett"
+    },
+    {
+      "id": 8,
+      "name": "Han Solor",
+      "username": "han-solo",
+      "email": "han-solo@starwars.com",
+      "password": "han.solo"
+    },
+    {
+      "id": 9,
+      "name": "Chewbacca",
+      "username": "chewbacca",
+      "email": "chewbacca@starwars.com",
+      "password": "chewbacca"
+    },
+    {
+      "id": 10,
+      "name": "C-3PO",
+      "username": "C-3PO",
+      "email": "c3po@starwars.com",
+      "password": "C3PO"
     }
   ],
-  "restaurant": [
+  "restaurants": [
     {
       "id": 1,
       "name": "Coco Bambu - Porto Alegre",
       "rating": "Avaliação: 4.4",
       "menu": "Frutos Do Mar",
-      "votos": 0,
+      "votes": 0,
       "logo": "https://static-images.ifood.com.br/image/upload/t_thumbnail/logosgde/201910292239_11ac6a47-0bcb-4aa2-8e0f-2181bb73f643.png"
     },
     {
@@ -29,15 +86,15 @@
       "name": "Divino Fogão - Manauara",
       "rating": "Avaliação: 4.0",
       "menu": "Brasileira",
-      "votos": 0,
-      "logo": "https://static-images.ifood.com.br/image/upload/t_thumbnail/logosgde/1b7282d7-e2ea-4a43-b6e0-c9590ea9f3e5/202005221311_e2gT_i.jpg"    
+      "votes": 0,
+      "logo": "https://static-images.ifood.com.br/image/upload/t_thumbnail/logosgde/1b7282d7-e2ea-4a43-b6e0-c9590ea9f3e5/202005221311_e2gT_i.jpg"
     },
     {
       "id": 3,
       "name": "Jeronimo - Bela Vista",
       "rating": "Avaliação: 4.2",
       "menu": "Lanches",
-      "votos": 0,
+      "votes": 0,
       "logo": "https://static-images.ifood.com.br/image/upload/t_thumbnail/logosgde/ee615fd4-9b9a-49fe-91ba-15a9adf5da5d/202005281945_V6R2_i.png"
     },
     {
@@ -45,7 +102,7 @@
       "name": "Severo Xis & Dogs - Centro",
       "rating": "Avaliação: 4.7",
       "menu": "Lanches",
-      "votos": 0,
+      "votes": 0,
       "logo": "https://static-images.ifood.com.br/image/upload/t_thumbnail/logosgde/dbb2436a-3d26-414c-9b6d-b8275ef0965e/202005281424_324N_i.jpg"
     },
     {
@@ -53,7 +110,7 @@
       "name": "Croasonho - Poa Iguatemi",
       "rating": "Avaliação: 4.9",
       "menu": "Lanches",
-      "votos": 0,
+      "votes": 0,
       "logo": "https://static-images.ifood.com.br/image/upload/t_thumbnail/logosgde/ae4a638f-e8a9-4363-804f-47537d75df0f/201906241149_KIZx_i.png"
     },
     {
@@ -61,7 +118,7 @@
       "name": "Black Beef - Protásio",
       "rating": "Avaliação: 4.8",
       "menu": "Lanches",
-      "votos": 0,
+      "votes": 0,
       "logo": "https://static-images.ifood.com.br/image/upload/t_thumbnail/logosgde/e701c100-f0df-43b3-b0df-cb924ea02804/202001150924_gUDR_.jpeg"
     },
     {
@@ -69,7 +126,7 @@
       "name": "Madero Anita Garibaldi",
       "rating": "Avaliação: 4.8",
       "menu": "Lanches",
-      "votos": 0,
+      "votes": 0,
       "logo": "https://static-images.ifood.com.br/image/upload/t_thumbnail/logosgde/7f13f154-58ea-4d86-82a4-d9508d21d392/202005141738_F8tC_i.jpg"
     },
     {
@@ -77,7 +134,7 @@
       "name": "Applebee's - Central de Delivery",
       "rating": "Avaliação: 4.4",
       "menu": "Variada",
-      "votos": 0,
+      "votes": 0,
       "logo": "https://static-images.ifood.com.br/image/upload/t_thumbnail/logosgde/4b20c825-d89e-4d5b-800e-5789548c5961/201910161555_fTtt_i.png"
     },
     {
@@ -85,7 +142,7 @@
       "name": "Habib's - Mostardeiro",
       "rating": "Avaliação: 3.4",
       "menu": "Lanches",
-      "votos": 0,
+      "votes": 0,
       "logo": "https://static-images.ifood.com.br/image/upload/t_thumbnail/logosgde/b3a1addf-63c1-4105-95a1-ee770a95c0ce/201912161810_pKEp_i.jpg"
     },
     {
@@ -93,7 +150,7 @@
       "name": "Ben & Jerry´s - Iguatemi Porto Alegre",
       "rating": "Avaliação: 4.3",
       "menu": "Sorvetes",
-      "votos": 0,
+      "votes": 0,
       "logo": "https://static-images.ifood.com.br/image/upload/t_thumbnail/logosgde/561c1a23-3bda-44d3-88e7-92053c2fbcc2/202003171203_432T_i.png"
     }
   ]
