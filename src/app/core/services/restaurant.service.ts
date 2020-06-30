@@ -13,6 +13,8 @@ export class RestaurantService {
   private api = 'http://localhost:4200/api';
 
   constructor(private httpClient: HttpClient) {}
+
+  // Headers
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
   };

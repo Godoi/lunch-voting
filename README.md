@@ -30,7 +30,7 @@ Execute `npm start` para subir aplicação web. Acesse o `http://localhost:4200/
 Execute `ng generate component component-name` para gerar novos componentes. Poderá usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Running unit tests
-Execute `npm test` para executar os teste.
+Execute `npm run test` para executar os teste.
 Execute `npm run test: watch` ou `npm run test -- --watch` para executar os teste unitários com
 a opção de recarregar automático e de busca de arquivos.
 Desenvolvido em Jest [Jest](https://jestjs.io/).
