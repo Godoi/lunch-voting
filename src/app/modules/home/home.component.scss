@@ -18,4 +18,11 @@
     padding-bottom: 20px;
   }
 
+  @media only screen 
+  and (max-device-width : 414px) { 
+    .container {
+      padding: 0 15px;
+    }
+  }
+
 }

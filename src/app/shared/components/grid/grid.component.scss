@@ -6,3 +6,41 @@
 .opac{
   opacity: 0.5;
 }
+
+@media only screen 
+and (max-device-width : 778px) { 
+  #list-group{
+    display:none;
+  }
+}
+
+@media only screen 
+and (max-device-width : 414px) { 
+  #list-group{
+    display:none;
+  }
+  .grid{
+    grid-template-columns: repeat(auto-fill, minmax(378px, 1fr));
+  }
+}
+
+@media only screen 
+and (max-device-width : 375px) { 
+  .grid{
+    grid-template-columns: repeat(auto-fill, minmax(342px, 1fr));
+  }
+}
+
+@media only screen 
+and (max-device-width : 360px) { 
+  .grid{
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+  }
+}
+
+@media only screen 
+and (max-device-width : 320px) { 
+  .grid{
+    grid-template-columns: repeat(auto-fill, minmax(287px, 1fr));
+  }
+}

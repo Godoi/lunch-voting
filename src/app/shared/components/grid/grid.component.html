@@ -23,7 +23,7 @@
       </div>
     </div>
   </div>
-  <div class="col col-4"> 
+  <div id="list-group" class="col col-4"> 
     <h1 class="title" [className]="winner ? 'title opac' : 'title'"> Usuários </h1> 
     <ul class="list-group" [className]="winner ? 'list-group opac' : 'list-group'"  data-cy="list-users">
       <li class="list-group-item"  *ngFor="let item of users">{{item.name}} <small>{{item.email}}</small></li>
