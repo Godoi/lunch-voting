@@ -14,10 +14,10 @@
             {{item.menu}}
           </p>
           <p class="info rating">
-            <span *ngIf="item.votes.total"> Total de votos: {{item.votes.total}} </span>
+            <span *ngIf="item.votes.total"> Total de votos: <strong data-cy="total-votes">{{item.votes.total}}</strong> </span>
           </p>
           <div class="footer" *ngIf="!winner">        
-            <button type="button" class="btn btn-primary btn-sm"  (click)="vote(item)">Votar</button>
+            <button type="button" class="btn btn-primary btn-sm"  (click)="vote(item)" data-cy="btn-vote">Votar</button>
           </div>
         </div>
       </div>

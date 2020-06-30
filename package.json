@@ -9,8 +9,8 @@
     "test:watch": "npm run test -- --watch",
     "test:coverage": "jest --coverage",
     "lint": "ng lint",
-    "e2e": "concurrently \"ng serve\" \"cypress open\"",
-    "cypress": "concurrently \"ng serve\" \"cypress open\""
+    "e2e": "concurrently \"ng serve --proxy-config proxy.config.js\" \"cypress open\"",
+    "cypress": "concurrently \"ng serve --proxy-config proxy.config.js\" \"cypress open\""
   },
   "private": true,
   "jest": {

@@ -11,7 +11,7 @@
             <input type="text" class="form-control" formControlName="email"  data-cy="email" required />
           </label>
         </div>
-        <p class="alert-warn">{{msgError}}</p>
+        <p class="alert-warn" data-cy="alert-warn">{{msgError}}</p>
     </div>
     <div class="modal-footer">
       <button type="button" [disabled]="!f.valid" class="btn btn-primary" type="submit" data-cy="cySubmit">

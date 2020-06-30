@@ -30,6 +30,7 @@ Run `npm run test: watch` or `npm run test -- --watch` to run unit tests with th
 Developed in Jest [Jest](https://jestjs.io/).
 
 ## Running end-to-end tests
+Up the service `lunch-vote-server`.
 Run `npx cypress open or npm run cypress` to execute the end-to-end tests via [Cypress](https://docs.cypress.io/guides/overview/why-cypress.html).
 
 The tests are available in the <b>application</b> folder.
